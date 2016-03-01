@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Cek Halal</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_akun">Akun</string>
+    <string name="action_pengaturan">Pengaturan</string>
+    <string name="action_tentang">Tentang</string>
+    <string name="title_activity_scan">Scan Halal</string>
+    <string name="title_activity_akun">Akun</string>
+    <string name="title_activity_tentang">Tentang</string>
+    <string name="title_activity_daftar_produk_halal">Daftar Produk Halal</string>
+    <string name="title_activity_istilah">Istilah Bahan Baku</string>
+    <string name="title_activity_panduan">Panduan Sertifikasi Halal</string>
+    <string name="title_activity_panduan1">Panduan Sertifikasi Halal</string>
+
+    <string name="title_section1">Langkah 1</string>
+    <string name="title_section2">Langkah 2</string>
+    <string name="title_section3">Langkah 3</string>
+    <string name="title_section4">Langkah 4</string>
+    <string name="title_section5">Langkah 5</string>
+    <string name="title_section6">Langkah 6</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
