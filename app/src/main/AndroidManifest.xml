@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.istandev.cekhalal" >
 
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -46,7 +48,8 @@
         </activity>
         <activity
             android:name=".DaftarProdukHalalActivity"
-            android:label="@string/title_activity_daftar_produk_halal" >
+            android:label="@string/title_activity_daftar_produk_halal"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -60,7 +63,8 @@
         </activity>
         <activity
             android:name=".PanduanActivity"
-            android:label="@string/title_activity_panduan" >
+            android:label="@string/title_activity_panduan"
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
@@ -71,6 +75,10 @@
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".Scan1Activity"
+            android:label="@string/title_activity_scan1" >
         </activity>
     </application>
 

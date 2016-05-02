@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.scan_halal).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent (MainActivity.this, ScanActivity.class);
+                Intent i = new Intent (MainActivity.this, Scan1Activity.class);
                 startActivity(i);
             }
         });
@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.panduan_sertifikasi).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent (MainActivity.this, Panduan1Activity.class);
+                Intent i = new Intent (MainActivity.this, PanduanActivity.class);
                 startActivity(i);
             }
         });
