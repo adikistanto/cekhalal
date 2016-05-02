@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.istandev.cekhalal" >
 
-    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="true"
@@ -79,7 +78,15 @@
         <activity
             android:name=".Scan1Activity"
             android:label="@string/title_activity_scan1" >
+            <intent-filter>
+                <action android:name="com.google.zxing.client.android.SCAN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
     </application>
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
 
 </manifest>
