@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.istilah_bahan_baku).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent (MainActivity.this, IstilahActivity.class);
+                Intent i = new Intent (MainActivity.this, ScrollingActivity.class);
                 startActivity(i);
             }
         });

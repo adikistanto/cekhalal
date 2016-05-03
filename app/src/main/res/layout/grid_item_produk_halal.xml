@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <com.istandev.cekhalal.customview.SquareImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textSize="20sp"
+        android:layout_margin="3dp"
+        android:background="#eb8484">
+    </com.istandev.cekhalal.customview.SquareImageView>
+
+    <TextView
+        android:id="@+id/grid_item_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="tes"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp"/>
+    <TextView
+        android:id="@+id/grid_item_merek"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="tes"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp"
+        android:layout_below="@id/grid_item_nama"/>
+
+</RelativeLayout>

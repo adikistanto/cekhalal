@@ -10,13 +10,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
-import android.view.Gravity;
-import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 
 public class Panduan1Activity extends AppCompatActivity {
 
@@ -147,8 +142,8 @@ public class Panduan1Activity extends AppCompatActivity {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
             switch (position){
-                case 0 :return FragmentPanduan1.newInstance(position + 1);
-                case 1 :return FragmentPanduan2.newInstance(position + 1);
+                case 0 :return FragmentPanduan.newInstance(position + 1);
+                case 1 :return FragmentPanduan.newInstance(position + 1);
                 case 2 :return FragmentPanduan3.newInstance(position + 1);
                 case 3 :return FragmentPanduan4.newInstance(position + 1);
                 case 4 :return FragmentPanduan5.newInstance(position + 1);

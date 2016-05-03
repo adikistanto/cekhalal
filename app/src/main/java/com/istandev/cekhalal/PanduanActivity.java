@@ -31,7 +31,7 @@ public class PanduanActivity extends AppCompatActivity {
 
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setTitle("Pilihan Produk");
+        getSupportActionBar().setTitle("Panduan Sertifikasi Halal");
 
         viewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager(viewPager);
@@ -45,12 +45,16 @@ public class PanduanActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentPanduan1(), "Makanan");
-        adapter.addFragment(new FragmentPanduan1(), "Pakaian");
-        adapter.addFragment(new FragmentPanduan1(), "Sembako");
-        adapter.addFragment(new FragmentPanduan1(), "Perabot");
-        adapter.addFragment(new FragmentPanduan1(), "Oleh-oleh");
-        adapter.addFragment(new FragmentPanduan1(), "Obat-obat");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 1");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 2");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 3");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 4");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 5");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 6");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 7");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 8");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 9");
+        adapter.addFragment(new FragmentPanduan(), "Langkah 10");
         viewPager.setAdapter(adapter);
     }
 
