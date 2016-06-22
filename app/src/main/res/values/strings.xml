@@ -123,4 +123,123 @@
     </string>
     <string name="title_activity_lapor">Lapor</string>
     <string name="title_activity_maps">Map</string>
+    <string name="google_maps_key">Map</string>
+    <string name="judul_panduan1">Apa Itu Sertifikat Halal?</string>
+    <string name="judul_panduan2">Jaminan Halal dari Produsen</string>
+    <string name="judul_panduan3">Prosedur Sertifikasi Halal</string>
+    <string name="judul_panduan4">Hal Yang Harus Dilakukan Perusahaan Pemohon</string>
+    <string name="judul_panduan5">Pemeriksaan (Audit) Produk Halal</string>
+    <string name="judul_panduan6">Sistem Pengawasan Sertifikat Halal</string>
+    <string name="judul_panduan7">Prosedur Perpanjangan Sertifikat Halal</string>
+    <string name="judul_panduan8">Info Sertifikasi Halal</string>
+    <string name="isi_panduan1">
+        Yang dimaksud Sertifikat Halal adalah suatu fatwa tertulis dari Majelis Ulama Indonesia (MUI) yang menyatakan kehalalan suatu produk sesuai dengan syari\'at Islam. Sertifikat Halal ini merupakan syarat untuk mendapatkan ijin pencantuman <b>LABEL HALAL</b> pada kemasan produk dari instansi pemerintah yang berwenang.
+        &lt;br>&lt;br>Pengadaan Sertifikasi Halal pada produk pangan, obat-obat, kosmetika dan produk lainnya sebenarnya bertujuan untuk memberikan kepastian status kehalalan suatu produk, sehingga dapat menentramkan batin konsumen muslim. Namun ketidaktahuan seringkali membuat minimnya perusahaan memiliki kesadaran untuk mendaftarkan diri guna memperoleh sertifikat halal.
+    </string>
+    <string name="isi_panduan2">
+        Masa berlaku Sertifikat Halal adalah 2 tahun. Hal tersebut untuk menjaga konsistensi produksi produsen selama berlakunya sertifikat. Sedangkan untuk daging yang diekspor Surat Keterangan Halal diberikan untuk setiap pengapalan.
+        &lt;br>&lt;br>Untuk memperoleh sertifikat halal LPPOM MUI memberikan <b>ketentuan bagi perusahaan sebagai berikut</b>:
+        &lt;br>1.
+        Sebelum produsen mengajukan sertifikat halal terlebih dahulu harus mempersiapkan Sistem Jaminan Halal. Penjelasan rinci tentang Sistem Jaminan Halal dapat merujuk kepada Buku Panduan Penyusunan Sistem Jaminan Halal yang dikeluarkan oleh LP POM MUI.
+        &lt;br>2.
+        Berkewajiban mengangkat secara resmi seorang atau tim Auditor Halal Internal (AHI) yang bertanggungjawab dalam menjamin pelaksanaan produksi halal.
+        &lt;br>3.
+        Berkewajiban menandatangani kesediaan untuk diinspeksi secara mendadak tanpa pemberitahuan sebelumnya oleh LPPOM MUI.
+        &lt;br>4.
+        Membuat laporan berkala setiap 6 bulan tentang pelaksanaan Sistem Jaminan Halal.
+    </string>
+    <string name="isi_panduan3">
+        Pertama-tama produsen yang menginginkan sertifikat halal mendaftarkan ke sekretariat LPPOM MUI dengan ketentuan sebagai berikut:
+        &lt;br>&lt;br>1.
+        <b>Bagi Industri Pengolahan</b>:
+        &lt;br>1.
+        Produsen harus mendaftarkan seluruh produk yang diproduksi di lokasi yang sama dan/atau yang memiliki merek/brand yang sama.
+        &lt;br>2.
+        Produsen harus mendaftarkan seluruh lokasi produksi termasuk maklon dan pabrik pengemasan.
+        &lt;br>3.
+        Ketentuan untuk tempat maklon harus dilakukan di perusahaan yang sudah mempunyai produk bersertifikat halal atau yang bersedia disertifikasi halal.
+        &lt;br>&lt;br>2.
+        <b>Bagi Restoran dan Katering</b>:
+        &lt;br>1.
+        Restoran dan katering harus mendaftarkan seluruh menu yang dijual termasuk produk-produk titipan, kue ulang tahun serta menu musiman.
+        &lt;br>2.
+        Restoran dan katering harus mendaftarkan seluruh gerai, dapur serta gudang.
+        &lt;br>&lt;br>3.
+        <b>Bagi Rumah Potong Hewan</b>:
+        &lt;br>1.
+        Produsen harus mendaftarkan seluruh tempat penyembelihan yang berada dalam satu perusahaan yang sama
+    </string>
+    <string name="isi_panduan4">
+        Setelah penggolongan berdasarkan kategori usaha, <b>beberapa hal yang harus dilakukan perusahaan pemohon</b>:
+        &lt;br>1.
+        Setiap produsen yang mengajukan permohonan Sertifikat Halal bagi produknya, harus mengisi Borang yang telah disediakan. Borang tersebut berisi informasi tentang data perusahaan, jenis dan nama produk serta bahan-bahan yang digunakan
+        &lt;br>2.
+        Borang yang sudah diisi beserta dokumen pendukungnya dikembalikan ke sekretariat LP POM MUI untuk diperiksa kelengkapannya, dan bila belum memadai perusahaan harus melengkapi sesuai dengan ketentuan.
+        &lt;br>3.
+        LPPOM MUI akan memberitahukan perusahaan mengenai jadwal audit. Tim Auditor LPPOM MUI akan melakukan pemeriksaan/audit ke lokasi produsen dan pada saat audit, perusahaan harus dalam keadaan memproduksi produk yang disertifikasi.
+        &lt;br>4.
+        Hasil pemeriksaan/audit dan hasil laboratorium (bila diperlukan) dievaluasi dalam Rapat Auditor LPPOM MUI. Hasil audit yang belum memenuhi persyaratan diberitahukan kepada perusahaan melalui audit memorandum. Jika telah memenuhi persyaratan, auditor akan membuat laporan hasil audit guna diajukan pada Sidang Komisi Fatwa MUI untuk diputuskan status kehalalannya.
+        &lt;br>5.
+        Laporan hasil audit disampaikan oleh Pengurus LPPOM MUI dalam Sidang Komisi Fatwa Mui pada waktu yang telah ditentukan.
+        &lt;br>6.
+        Sidang Komisi Fatwa MUI dapat menolak laporan hasil audit jika dianggap belum memenuhi semua persyaratan yang telah ditentukan, dan hasilnya akan disampaikan kepada produsen pemohon sertifikasi halal.
+        &lt;br>7.
+        Sertifikat Halal dikeluarkan oleh Majelis Ulama Indonesia setelah ditetapkan status kehalalannya oleh Komisi Fatwa MUI.
+        &lt;br>8.
+        Sertifikat Halal berlaku selama 2 (dua) tahun sejak tanggal penetapan fatwa.
+        &lt;br>9.
+        Tiga bulan sebelum masa berlaku Sertifikat Halal berakhir, produsen harus mengajukan perpanjangan sertifikat halal sesuai dengan aturan yang telah ditetapkan LPPOM MUI.
+    </string>
+    <string name="isi_panduan5">
+        Kemudian dilakukanlah tata cara pemeriksaan (Audit) mulai dari manajemen, bahan-bahan baku, dll. <b>Pemeriksaan (audit) produk halal mencakup</b>:
+        &lt;br>1.
+        Manajemen produsen dalam menjamin kehalalan produk (Sistem Jaminan Halal).
+        &lt;br>2.
+        Pemeriksaan dokumen-dokumen spesifikasi yang menjelaskan asal-usul bahan, komposisi dan proses pembuatannya dan/atau sertifikat halal pendukungnya, dokumen pengadaan dan penyimpanan bahan, formula produksi serta dokumen pelaksanaan produksi halal secara keseluruhan.
+        &lt;br>3.
+        Observasi lapangan yang mencakup proses produksi secara keseluruhan mulai dari penerimaan bahan, produksi, pengemasan dan penggudangan serta penyajian untuk restoran/catering/outlet.
+        &lt;br>4.
+        Keabsahan dokumen dan kesesuaian secara fisik untuk setiap bahan harus terpenuhi.
+        &lt;br>5.
+        Pengambilan contoh dilakukan untuk bahan yang dinilai perlu.
+    </string>
+    <string name="isi_panduan6">
+        1.
+        Perusahaan wajib mengimplementasikan Sistem Jaminan Halal sepanjang berlakunya Sertifikat Halal
+        &lt;br>2.
+        Perusahaan berkewajiban menyerahkan laporan audit internal setiap 6 (enam) bulan sekali setelah terbitnya Sertifikat Halal.
+        &lt;br>3.
+        Perubahan bahan, proses produksi dan lainnya perusahaan wajib melaporkan dan mendapat izin dari LPPOM MUI.
+    </string>
+    <string name="isi_panduan7">
+        1.
+        Produsen harus mendaftar kembali dan mengisi borang yang disediakan.
+        &lt;br>2.
+        Pengisian borang disesuaikan dengan perkembangan terakhir produk.
+        &lt;br>3.
+        Produsen berkewajiban melengkapi kembali daftar bahan baku, matrik produk versus bahan serta spesifikasi, sertifikat halal dan bagan alir proses terbaru.
+        &lt;br>4.
+        Prosedur pemeriksaan dilakukan seperti pada pendaftaran produk baru.
+        &lt;br>5.
+        Perusahaan harus sudah mempunyai manual Sistem Jaminan Halal sesuai dengan ketentuan prosedur sertifikasi halal di atas.
+    </string>
+    <string name="isi_panduan8">
+        Mengingat pentingnya jaminan halal tersebut bagi konsumen maka tiap perusahaan makanan, obat dan kosmetik dianjurkan untuk memperoleh serifikat halal. Untuk informasi lebih lanjut bisa menghubung:
+        &lt;br>&lt;br>Sekretariat LPPOM MUI
+        &lt;br><b>Gedung Majelis Ulama Indonesia</b>
+        &lt;br>Jl. Proklamasi No. 51 Menteng Jakarta Pusat
+        &lt;br>Phone No. + 62 21 3918890
+        &lt;br>Fax. No. +62 21 3918915
+        &lt;br>&lt;br><b>Atau</b>
+        &lt;br>&lt;br><b>Kampus IPB Barangsiang</b>
+        &lt;br>Jl. Raya Pajajaran Bogor 16144
+        &lt;br>Phone No. +62 251 8358748
+        &lt;br>Fax. No. +62 251 8358747
+        &lt;br>Email : sekretariatlppom@halalmui.org
+        &lt;br>&lt;br><b>Pusat Pelatihan dan Informasi Halal</b>
+        &lt;br>Komplek Tanah Baru Indah Jl. Pangeran Assoghiri Kav. 93 Blok C 1-2 Bogor Utara
+        &lt;br>Phone No. +62 251 8662931 / +62 251 8656279
+        &lt;br>Fax. No. +62 251 8656250
+        &lt;br>Email : info@halalmui.org
+    </string>
 </resources>
