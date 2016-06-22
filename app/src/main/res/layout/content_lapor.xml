@@ -10,7 +10,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/scrollView5" >
+        android:id="@+id/scrollView" >
 
         <LinearLayout
             android:orientation="vertical"
@@ -72,7 +72,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
-                android:hint="Nama pabrik"
+                android:hint="Nama perusahaan"
                 android:background="#FFFAFAFA"
                 android:padding="10dp" />
 
@@ -84,8 +84,26 @@
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="10dp"
                 android:layout_marginBottom="50dp"
-                android:background="?attr/selectableItemBackground"
                 android:layout_marginTop="20dp" />
         </LinearLayout>
     </ScrollView>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@mipmap/ic_launcher1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Terima kasih atas partisipasi Anda"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp" />
+    </LinearLayout>
 </RelativeLayout>

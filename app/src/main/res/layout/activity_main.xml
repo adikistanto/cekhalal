@@ -6,21 +6,51 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/color_primary_dark">
+        android:background="@android:color/white">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
-
-            <ImageView
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="256dp"
-                android:src="@mipmap/cover_produk_halal"
-                android:scaleType="centerCrop">
-
-            </ImageView>
+                android:layout_height="256dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="256dp"
+                    android:src="@drawable/cover_home"
+                    android:scaleType="centerCrop"/>
+                <ImageView
+                    android:id="@+id/icon_utama"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@mipmap/ic_launcher1"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="50dp" />
+                <TextView
+                    android:id="@+id/jumlah_produk"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2000"
+                    android:textColor="@android:color/white"
+                    android:layout_toRightOf="@+id/icon_utama"
+                    android:layout_marginTop="110dp"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="produk halal"
+                    android:textAllCaps="true"
+                    android:id="@+id/label"
+                    android:textColor="@android:color/white"
+                    android:layout_below="@+id/jumlah_produk"
+                    android:layout_toRightOf="@+id/icon_utama"
+                    android:textStyle="bold"
+                    android:textSize="25sp" />
+            </RelativeLayout>
 
             <LinearLayout
                 android:orientation="horizontal"
@@ -42,7 +72,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView2"
-                        android:src="@android:drawable/stat_notify_chat"
+                        android:src="@drawable/ic_scan"
+                        android:scaleType="centerCrop"
                         android:layout_gravity="center_horizontal"
                         android:focusableInTouchMode="false" />
 
@@ -51,9 +82,10 @@
                         android:layout_height="wrap_content"
                         android:text="Scan Halal"
                         android:id="@+id/textView1"
+                        android:textAllCaps="true"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -69,7 +101,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView3"
-                        android:src="@android:drawable/stat_sys_warning"
+                        android:src="@drawable/ic_produk_halal"
+                        android:scaleType="centerCrop"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
@@ -80,7 +113,8 @@
                         android:layout_gravity="center_horizontal"
                         android:clickable="false"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:textAllCaps="true"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -103,7 +137,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView4"
-                        android:src="@android:drawable/stat_sys_headset"
+                        android:src="@drawable/ic_istilah"
+                        android:scaleType="centerCrop"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
@@ -113,7 +148,8 @@
                         android:id="@+id/textView"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:textAllCaps="true"
+                        android:gravity="center_horizontal" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -129,7 +165,8 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView5"
-                        android:src="@android:drawable/ic_lock_silent_mode_off"
+                        android:src="@drawable/ic_panduan"
+                        android:scaleType="centerCrop"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
@@ -140,7 +177,7 @@
                         android:layout_gravity="center_horizontal"
                         android:gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:textAllCaps="true" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -163,7 +200,7 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView6"
-                        android:src="@android:drawable/stat_sys_headset"
+                        android:src="@drawable/ic_lapor"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
@@ -172,7 +209,7 @@
                         android:text="Laporan"
                         android:layout_gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:textAllCaps="true" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -181,24 +218,24 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:padding="25dp"
-                    android:id="@+id/kosong"
+                    android:clickable="true"
+                    android:id="@+id/akun"
                     android:background="?selectableItemBackgroundBorderless">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:id="@+id/imageView7"
-                        android:src="@android:drawable/ic_lock_silent_mode_off"
+                        android:src="@drawable/ic_akun"
                         android:layout_gravity="center_horizontal" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Panduan Sertifikasi Halal"
+                        android:text="Akun"
                         android:layout_gravity="center_horizontal"
-                        android:gravity="center_horizontal"
                         android:layout_marginTop="10dp"
-                        android:textColor="#ffffff" />
+                        android:textAllCaps="true" />
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

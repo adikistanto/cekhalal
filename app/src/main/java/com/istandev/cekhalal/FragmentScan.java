@@ -12,6 +12,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
@@ -20,6 +21,7 @@ import android.widget.Toast;
 import com.istandev.cekhalal.adapter.ProdukHalalAdapter;
 import com.istandev.cekhalal.entity.Produk;
 import com.istandev.cekhalal.utility.JSONParser;
+import com.squareup.picasso.Picasso;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -50,7 +52,9 @@ public class FragmentScan extends DialogFragment {
     private ProgressBar progressBar;
     private TextView namaTV,merekTV,pabrikTV,bahanTV,kategoriTV;
 
-    private String nama,merek,pabrik,nilai_barcode,kategori, bahan;
+    private String nama,merek,pabrik,nilai_barcode,kategori, bahan,url;
+
+    private ImageView gambarIV;
 
     private LinearLayout ser,unser;
 
@@ -64,6 +68,7 @@ public class FragmentScan extends DialogFragment {
         pabrikTV = (TextView) rootView.findViewById(R.id.pabrik);
         kategoriTV = (TextView) rootView.findViewById(R.id.kategori);
         bahanTV = (TextView) rootView.findViewById(R.id.bahan);
+        gambarIV = (ImageView) rootView.findViewById(R.id.gambar_produk);
 
         ser = (LinearLayout) rootView.findViewById(R.id.bersertifikat);
         unser = (LinearLayout) rootView.findViewById(R.id.takbersertifikat);
@@ -129,12 +134,15 @@ public class FragmentScan extends DialogFragment {
                 unser.setVisibility(View.VISIBLE);
                 ser.setVisibility(View.GONE);
             }else{
+                unser.setVisibility(View.GONE);
+                ser.setVisibility(View.VISIBLE);
                 Log.v("nama",nama);
                 namaTV.setText(nama);
-                merekTV.setText(merek);
-                pabrikTV.setText(pabrik);
-                kategoriTV.setText(kategori);
-                bahanTV.setText(bahan);
+                merekTV.setText("merek :"+merek);
+                pabrikTV.setText("perusahaan :"+pabrik);
+                kategoriTV.setText("kategori :"+kategori);
+                bahanTV.setText("komposisi :\n"+bahan);
+                Picasso.with(getContext()).load(url).into(gambarIV);
             }
 
         }
@@ -162,6 +170,7 @@ public class FragmentScan extends DialogFragment {
                             bahan= c.getString(TAG_BAHAN_PRODUK);//bahan
                                 //c.getString(TAG_STATUS_PRODUK),//status
                             kategori =c.getString(TAG_KATEGORI_PRODUK);//gambar
+                            url = c.getString(TAG_GAMBAR_PRODUK);
                     }
                     return "OK";
                 }

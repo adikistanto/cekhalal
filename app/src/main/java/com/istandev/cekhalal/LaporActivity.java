@@ -25,6 +25,7 @@ import android.widget.Toast;
 
 import com.istandev.cekhalal.utility.ImageUpload;
 import com.istandev.cekhalal.utility.JSONParser;
+import com.istandev.cekhalal.utility.SessionManager;
 
 import org.apache.http.NameValuePair;
 import org.apache.http.message.BasicNameValuePair;
@@ -59,6 +60,8 @@ public class LaporActivity extends AppCompatActivity {
     ImageView showImg;
     ImageUpload imgUpload = new ImageUpload();
 
+    SessionManager session;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -67,14 +70,9 @@ public class LaporActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+        session = new SessionManager(this);
+
+        session.checkLogin();
 
         // Selector
         showImg = (ImageView) findViewById(R.id.showImg);
@@ -84,7 +82,8 @@ public class LaporActivity extends AppCompatActivity {
         ButKirim = (Button) findViewById(R.id.button_lapor);
 
 
-
+        findViewById(R.id.scrollView).setVisibility(View.VISIBLE);
+        findViewById(R.id.linear).setVisibility(View.GONE);
 
         showImg.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -266,11 +265,9 @@ public class LaporActivity extends AppCompatActivity {
             }
             else if (result.equalsIgnoreCase("OK")){
                 dialog.dismiss();
-                Toast.makeText(LaporActivity.this, "Berhasil menambah produk",  Toast.LENGTH_SHORT).show();
-                EditTxtnamaproduk.setText("");
-                EditTxthargaproduk.setText("");
-                EditTxtpabrikproduk.setText("");
-                showImg.setImageResource(R.drawable.add_image);
+                Toast.makeText(LaporActivity.this, "Berhasil menambah laporan",  Toast.LENGTH_SHORT).show();
+                findViewById(R.id.scrollView).setVisibility(View.GONE);
+                findViewById(R.id.linear).setVisibility(View.VISIBLE);
               //  Intent i = new Intent(LaporActivity.this, DaftarProdukActivity.class);
                // i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 //i.putExtra("id_user", idpenggunaStr);

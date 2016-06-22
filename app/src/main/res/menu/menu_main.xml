@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools" tools:context=".MainActivity">
     <item android:id="@+id/action_akun" android:title="@string/action_akun"
         android:orderInCategory="100" app:showAsAction="never" />
-    <item android:id="@+id/action_pengaturan" android:title="@string/action_pengaturan"
+    <!--<item android:id="@+id/action_pengaturan" android:title="@string/action_pengaturan"
         android:orderInCategory="100" app:showAsAction="never" />
     <item android:id="@+id/action_tentang" android:title="@string/action_tentang"
-        android:orderInCategory="100" app:showAsAction="never" />
+        android:orderInCategory="100" app:showAsAction="never" />-->
 </menu>

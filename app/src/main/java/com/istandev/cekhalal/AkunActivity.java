@@ -21,6 +21,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.OptionalPendingResult;
 import com.google.android.gms.common.api.ResultCallback;
 import com.google.android.gms.common.api.Status;
+import com.istandev.cekhalal.utility.SessionManager;
 import com.squareup.picasso.Picasso;
 
 public class AkunActivity extends AppCompatActivity implements GoogleApiClient.OnConnectionFailedListener, View.OnClickListener{
@@ -32,11 +33,15 @@ public class AkunActivity extends AppCompatActivity implements GoogleApiClient.O
     private ImageView profilImageView;
     private ProgressDialog mProgressDialog;
 
+    private SessionManager session;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_akun);
+
+        session = new SessionManager(this);
 
 
         // Configure sign-in to request the user's ID, email address, and basic profile. ID and
@@ -98,6 +103,7 @@ public class AkunActivity extends AppCompatActivity implements GoogleApiClient.O
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_logout) {
             signOut();
+            session.logoutUser();
             return true;
         }
 
@@ -168,6 +174,7 @@ public class AkunActivity extends AppCompatActivity implements GoogleApiClient.O
             mNamaTextView.setText(acct.getDisplayName());
             mEmailTextView.setText(acct.getEmail());
             Picasso.with(this).load(acct.getPhotoUrl()).into(profilImageView);
+            session.createLoginSession(acct.getId().toString(),acct.getDisplayName().toString(),acct.getEmail().toString(),acct.getPhotoUrl().toString());
             updateUI(true);
         } else {
             // Signed out, show unauthenticated UI.
@@ -193,10 +200,10 @@ public class AkunActivity extends AppCompatActivity implements GoogleApiClient.O
 
     private void updateUI(boolean signedIn) {
         if (signedIn) {
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
+            findViewById(R.id.tombol_login).setVisibility(View.GONE);
             findViewById(R.id.profil_info).setVisibility(View.VISIBLE);
         } else {
-            findViewById(R.id.sign_in_button).setVisibility(View.VISIBLE);
+            findViewById(R.id.tombol_login).setVisibility(View.VISIBLE);
             findViewById(R.id.profil_info).setVisibility(View.GONE);
         }
     }

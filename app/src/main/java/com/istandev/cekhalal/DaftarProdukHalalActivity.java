@@ -55,6 +55,7 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
     ArrayList<Produk> daftar_produk_makanan_cepat_saji = new ArrayList<Produk>();
     ArrayList<Produk> daftar_produk_air_mineral = new ArrayList<Produk>();
     ArrayList<Produk> daftar_produk_soft_drink = new ArrayList<Produk>();
+    ArrayList<Produk> daftar_produk_perlengkapan = new ArrayList<Produk>();
 
     private ProgressBar progressBar;
     private TextView progressText;
@@ -88,6 +89,7 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
         adapter.addFragment(new FragmentProdukHalal(), "Makanan Cepat Saji");
         adapter.addFragment(new FragmentProdukHalal(), "Air Mineral");
         adapter.addFragment(new FragmentProdukHalal(), "Soft Drink");
+        adapter.addFragment(new FragmentProdukHalal(), "Perlengkapan");
         viewPager.setAdapter(adapter);
     }
 
@@ -119,7 +121,10 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
                 extras1.putParcelableArrayList("arraylist", daftar_produk_air_mineral);
             }else if(title.equalsIgnoreCase("Soft Drink")){
                 extras1.putParcelableArrayList("arraylist", daftar_produk_soft_drink);
+            }else if(title.equalsIgnoreCase("Perlengkapan")){
+                extras1.putParcelableArrayList("arraylist", daftar_produk_perlengkapan);
             }
+
             fragment.setArguments(extras1);
             mFragmentList.add(fragment);
             mFragmentTitleList.add(title);
@@ -215,6 +220,8 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
                             daftar_produk_air_mineral.add(tempToko);
                         }else if (c.getString(TAG_KATEGORI_PRODUK).equalsIgnoreCase("Soft Drink")){
                             daftar_produk_soft_drink.add(tempToko);
+                        }else if (c.getString(TAG_KATEGORI_PRODUK).equalsIgnoreCase("Perlengkapan")){
+                            daftar_produk_perlengkapan.add(tempToko);
                         }
                     }
                     return "OK";
@@ -230,27 +237,5 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
             }
         }
 
-    }
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_daftar_produk_halal, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 }

@@ -62,11 +62,11 @@ public class ProdukHalalAdapter extends BaseAdapter {
 
             // set value into textview
             TextView textView = (TextView) gridView.findViewById(R.id.grid_item_nama);
-            TextView textView1 = (TextView) gridView.findViewById(R.id.grid_item_merek);
-            SquareImageView imageView = (SquareImageView) gridView.findViewById(R.id.gambar_produk);
+            //TextView textView1 = (TextView) gridView.findViewById(R.id.grid_item_merek);
+            ImageView imageView = (ImageView) gridView.findViewById(R.id.gambar_produk);
             Produk data = data_toko.get(position);
             textView.setText(data.getNamaProduk());
-            textView1.setText(data.getMerekProduk());
+           // textView1.setText(data.getMerekProduk());
             Picasso.with(activity).load(data.getGambar_produk()).into(imageView);
 
         } else {
@@ -77,7 +77,7 @@ public class ProdukHalalAdapter extends BaseAdapter {
             @Override
             public void onClick(View v) {
                 Produk data = data_toko.get(position);
-                String[] array = new String[]{data.getNamaProduk(),data.getMerekProduk()};
+                String[] array = new String[]{data.getNamaProduk(),data.getMerekProduk(),data.getGambar_produk(),data.getBahan_produk()};
                 Intent i = new Intent(activity, DetailProdukActivity.class);
                 i.putExtra("data",array);
                 activity.startActivity(i);

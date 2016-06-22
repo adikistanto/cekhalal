@@ -2,6 +2,8 @@
 <RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:elevation="2dp"
+    android:background="@drawable/shadow"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <com.istandev.cekhalal.customview.SquareImageView
@@ -10,8 +12,7 @@
         android:textSize="20sp"
         android:layout_margin="3dp"
         android:id="@id/gambar_produk"
-        android:scaleType="centerCrop">
-    </com.istandev.cekhalal.customview.SquareImageView>
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/grid_item_nama"
@@ -23,10 +24,10 @@
         android:padding="5dp"
         android:textColor="#ffffffff"
         android:textSize="17sp"
-        android:background="#4d1b1d1b"
+        android:background="#c65496ae"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp" />
-    <TextView
+   <!-- <TextView
         android:id="@+id/grid_item_merek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -36,8 +37,8 @@
         android:textColor="#ffffffff"
         android:textSize="17sp"
         android:layout_below="@id/grid_item_nama"
-        android:background="#4d1b1d1b"
+        android:background="#c65496ae"
         android:layout_marginRight="3dp"
-        android:layout_marginLeft="3dp" />
+        android:layout_marginLeft="3dp" />-->
 
 </RelativeLayout>
