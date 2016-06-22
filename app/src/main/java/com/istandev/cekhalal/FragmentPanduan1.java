@@ -11,10 +11,10 @@ import android.view.ViewGroup;
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
  * to handle interaction events.
- * Use the {@link FragmentPanduan#newInstance} factory method to
+ * Use the {@link FragmentPanduan1#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragmentPanduan extends android.support.v4.app.Fragment {
+public class FragmentPanduan1 extends android.support.v4.app.Fragment {
     /**
      * The fragment argument representing the section number for this
      * fragment.
@@ -25,21 +25,21 @@ public class FragmentPanduan extends android.support.v4.app.Fragment {
      * Returns a new instance of this fragment for the given section
      * number.
      */
-    public static FragmentPanduan newInstance(int sectionNumber) {
-        FragmentPanduan fragment = new FragmentPanduan();
+    public static FragmentPanduan1 newInstance(int sectionNumber) {
+        FragmentPanduan1 fragment = new FragmentPanduan1();
         Bundle args = new Bundle();
         args.putInt(ARG_SECTION_NUMBER, sectionNumber);
         fragment.setArguments(args);
         return fragment;
     }
 
-    public FragmentPanduan() {
+    public FragmentPanduan1() {
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_panduan2, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_panduan1, container, false);
         return rootView;
     }
 }

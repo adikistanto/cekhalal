@@ -39,7 +39,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:text="Judul 4"
+                    android:text="PENYERAHAN DOKUMEN SERTIFIKASI HALAL"
                     android:id="@+id/textView4"
                     android:layout_marginTop="20dp"
                     android:layout_marginLeft="20dp" />

@@ -45,16 +45,10 @@ public class PanduanActivity extends AppCompatActivity {
 
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
-        adapter.addFragment(new FragmentPanduan(), "Langkah 1");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 2");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 3");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 4");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 5");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 6");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 7");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 8");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 9");
-        adapter.addFragment(new FragmentPanduan(), "Langkah 10");
+        adapter.addFragment(new FragmentPanduan1(), "Langkah 1");
+        adapter.addFragment(new FragmentPanduan2(), "Langkah 2");
+        adapter.addFragment(new FragmentPanduan3(), "Langkah 3");
+        adapter.addFragment(new FragmentPanduan4(), "Langkah 4");
         viewPager.setAdapter(adapter);
     }
 

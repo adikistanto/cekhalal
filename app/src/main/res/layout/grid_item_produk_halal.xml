@@ -9,7 +9,8 @@
         android:layout_height="match_parent"
         android:textSize="20sp"
         android:layout_margin="3dp"
-        android:background="#eb8484">
+        android:id="@id/gambar_produk"
+        android:scaleType="centerCrop">
     </com.istandev.cekhalal.customview.SquareImageView>
 
     <TextView
@@ -21,17 +22,22 @@
         android:layout_marginTop="5dp"
         android:padding="5dp"
         android:textColor="#ffffffff"
-        android:textSize="17sp"/>
+        android:textSize="17sp"
+        android:background="#4d1b1d1b"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp" />
     <TextView
         android:id="@+id/grid_item_merek"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="tes"
-        android:layout_marginTop="5dp"
         android:padding="5dp"
         android:textColor="#ffffffff"
         android:textSize="17sp"
-        android:layout_below="@id/grid_item_nama"/>
+        android:layout_below="@id/grid_item_nama"
+        android:background="#4d1b1d1b"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp" />
 
 </RelativeLayout>

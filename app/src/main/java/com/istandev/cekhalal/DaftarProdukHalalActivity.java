@@ -74,7 +74,7 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
 
 
 
-        //progressBar = (ProgressBar) findViewById(R.id.progresbar);
+        progressBar = (ProgressBar) findViewById(R.id.progresbar);
         //progressText = (TextView) findViewById(R.id.memuat);
 
         new ReadProdukTask().execute();
@@ -144,7 +144,7 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
         protected void onPreExecute() {
             super.onPreExecute();
 
-           // progressBar.setVisibility(View.VISIBLE);
+           progressBar.setVisibility(View.VISIBLE);
             //progressText.setVisibility(View.VISIBLE);
         }
 
@@ -158,7 +158,7 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(String result) {
             super.onPostExecute(result);
-           // progressBar.setVisibility(View.GONE);
+            progressBar.setVisibility(View.GONE);
             //progressText.setVisibility(View.GONE);
             if(result.equalsIgnoreCase("Exception Caught"))
             {
@@ -181,15 +181,16 @@ public class DaftarProdukHalalActivity extends AppCompatActivity {
         }
 
 
-        //method untuk memperoleh daftar mahasiswa dari JSON
         public String getTokoList()
         {
             Produk tempToko;
             List<NameValuePair> parameter = new ArrayList<NameValuePair>();
             try {
+                Log.v("tes","tes");
                 JSONObject json = jParser.makeHttpRequest(url_read_produk,"POST", parameter);
-
+                Log.v("tes1","tes1");
                 int success = json.getInt(TAG_SUCCESS);
+                Log.v("sukes",""+json.getInt(TAG_SUCCESS));
                 if (success == 1) { //Ada record Data (SUCCESS = 1)
                     //Getting Array of daftar_mhs
                     daftarProduk = json.getJSONArray(TAG_PRODUK);

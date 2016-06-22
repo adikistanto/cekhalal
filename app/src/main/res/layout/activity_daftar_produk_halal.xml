@@ -22,10 +22,11 @@
                 android:id="@+id/htab_header"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@mipmap/ic_launcher"
+                android:background="@mipmap/cover_produk_halal"
                 android:fitsSystemWindows="true"
                 android:scaleType="centerCrop"
-                app:layout_collapseMode="parallax" />
+                app:layout_collapseMode="parallax"
+                android:foreground="#6ac0e968" />
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
@@ -43,10 +44,19 @@
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             app:tabMode="scrollable"
             android:fitsSystemWindows="true"
-            app:tabIndicatorColor="@android:color/white" />
+            app:tabTextColor="@color/color_primary_light"
+            app:tabIndicatorColor="@color/color_accent" />
 
 
     </android.support.design.widget.AppBarLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120dp"
+        android:layout_gravity="center"
+        android:id="@+id/progresbar"
+        />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"

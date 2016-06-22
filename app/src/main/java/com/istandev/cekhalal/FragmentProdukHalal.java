@@ -25,7 +25,7 @@ public class FragmentProdukHalal extends android.support.v4.app.Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.fragment_panduan1, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_produk_halal, container, false);
 
         ExpandableGridView gridview = (ExpandableGridView) rootView.findViewById(R.id.gridview);
         gridview.setExpanded(true);

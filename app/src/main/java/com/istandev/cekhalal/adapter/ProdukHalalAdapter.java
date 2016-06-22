@@ -7,12 +7,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.istandev.cekhalal.DaftarProdukHalalActivity;
 import com.istandev.cekhalal.DetailProdukActivity;
 import com.istandev.cekhalal.R;
+import com.istandev.cekhalal.customview.SquareImageView;
 import com.istandev.cekhalal.entity.Produk;
+import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 
@@ -60,9 +63,12 @@ public class ProdukHalalAdapter extends BaseAdapter {
             // set value into textview
             TextView textView = (TextView) gridView.findViewById(R.id.grid_item_nama);
             TextView textView1 = (TextView) gridView.findViewById(R.id.grid_item_merek);
+            SquareImageView imageView = (SquareImageView) gridView.findViewById(R.id.gambar_produk);
             Produk data = data_toko.get(position);
             textView.setText(data.getNamaProduk());
             textView1.setText(data.getMerekProduk());
+            Picasso.with(activity).load(data.getGambar_produk()).into(imageView);
+
         } else {
             gridView = (View) convertView;
         }
